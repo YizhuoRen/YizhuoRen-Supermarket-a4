@@ -1,38 +1,51 @@
-
+import com.amazonaws.auth.AWSCredentialsProvider;
+import com.amazonaws.auth.AWSStaticCredentialsProvider;
+import com.amazonaws.auth.BasicAWSCredentials;
+import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
+import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import javax.servlet.ServletException;
+import java.util.UUID;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 
 @WebServlet("/purchase")
 public class SupermarketServlet extends HttpServlet {
-  protected PurchaseDao newPurchaseDao;
-//    protected ItemPurchasedDao newItemPurchasedDao;
+  protected DynamoDBMapper mapper;
+
 
   @Override
-  public void init() throws ServletException {
-    newPurchaseDao = new PurchaseDao();
-//      newItemPurchasedDao = new ItemPurchasedDao();
+  public void init(){
+    AWSCredentialsProvider creds = new AWSStaticCredentialsProvider(
+        new BasicAWSCredentials("AKIAQYM3DRQQB4Y6RIPS",
+            "GfV+sKReBJOmTG1WgHsOvj5SSJX5DzQk2OKpU072")
+    );
+
+    AmazonDynamoDB ddbClient = AmazonDynamoDBClientBuilder.standard()
+        .withCredentials(creds)
+        .withRegion("us-east-1")
+        .build();
+
+    mapper = new DynamoDBMapper(ddbClient);
+
   }
+
 
   @Override
   protected void doGet(HttpServletRequest request,
       HttpServletResponse response)
-      throws ServletException, IOException {
+      throws IOException {
     doPost(request, response);
   }
 
   @Override
-  protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+  protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {
     res.setContentType("text/plain");
     String urlPath = req.getPathInfo();
 
@@ -47,12 +60,9 @@ public class SupermarketServlet extends HttpServlet {
     } finally {
       reader.close();
     }
-    JSONObject jsonObject = null;
-    try {
-      jsonObject = new JSONObject(sb.toString());
-    } catch (JSONException e) {
-      e.printStackTrace();
-    }
+
+      String purchasedItem = sb.toString();
+
 
     // check we have a URL!
     if (urlPath == null || urlPath.isEmpty()) {
@@ -63,7 +73,7 @@ public class SupermarketServlet extends HttpServlet {
 
     String[] urlParts = urlPath.split("/");
     try {
-      if (!processPurchase(urlParts, jsonObject)) {
+      if (!processPurchase(urlParts, purchasedItem)) {
         res.setStatus(HttpServletResponse.SC_NOT_FOUND);
         res.getWriter().write("not valid");
       } else {
@@ -75,7 +85,7 @@ public class SupermarketServlet extends HttpServlet {
     }
   }
 
-  private boolean processPurchase(String[] urlPath, JSONObject jsonObject) throws ParseException {
+  private boolean processPurchase(String[] urlPath, String purchasedItem) throws ParseException {
     int storeID;
     int custID;
     String date;
@@ -106,22 +116,21 @@ public class SupermarketServlet extends HttpServlet {
       return false;
     }
     SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
-//      JSONArray arr = jsonObject.getJSONArray("items");
-    Purchase newPurchase = new Purchase(storeID, custID, sdf.parse(date), jsonObject);
-    try {
-      Class.forName("com.mysql.cj.jdbc.Driver");
-      Purchase purchase = newPurchaseDao.createNewPurchase(newPurchase);
-//        for (int i =0; i < arr.length(); i++) {
-//          String itemId = arr.getJSONObject(i).getString("ItemID");
-//          Integer numberOfItems = arr.getJSONObject(i).getInt("numberOfItems:");
-//          ItemPurchased itemPurchased = new ItemPurchased(itemId, numberOfItems, purchase.getPurchaseId());
-//          newItemPurchasedDao.createItemPurchased(itemPurchased);
-//        }
-    } catch (SQLException e) {
-      e.printStackTrace();
-    } catch (ClassNotFoundException e) {
-      e.printStackTrace();
-    }
+    Purchase newPurchase = new Purchase();
+
+    newPurchase.setPurchaseId(getUUID32(custID));
+    newPurchase.setStoreId(storeID);
+    newPurchase.setCustomId(custID);
+    newPurchase.setDate(sdf.parse(date));
+    newPurchase.setItemsPurchased(purchasedItem);
+
+    mapper.save(newPurchase);
+
     return true;
+  }
+
+  public static String getUUID32(int custID){
+      String customId = String.valueOf(custID);
+      return UUID.randomUUID().toString().replace("-", "").toLowerCase() + customId;
   }
 }

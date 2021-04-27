@@ -1,58 +1,53 @@
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBRangeKey;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 import java.util.Date;
-import org.json.JSONObject;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
+@ToString
+@NoArgsConstructor
+@Getter
+@Setter
+@DynamoDBTable(tableName="Purchases")
 public class Purchase {
-  private Integer PurchaseId;
-  private Integer StoreId;
-  private Integer CustomId;
+
+  @DynamoDBHashKey(attributeName ="purchaseId")
+  private String purchaseId;
+
+  @DynamoDBAttribute(attributeName = "storeId")
+  private Integer storeId;
+
+  @DynamoDBAttribute(attributeName ="customId")
+  private Integer customId;
+
+  @DynamoDBAttribute(attributeName = "date")
   private Date date;
-  private JSONObject itemsPurchased;
+
+  @DynamoDBAttribute(attributeName = "itemsPurchased")
+  private String itemsPurchased;
 
 
 
-  public Purchase(Integer storeId, Integer customId, Date date, JSONObject itemsPurchased) {
-    StoreId = storeId;
-    CustomId = customId;
-    this.date = date;
-    this.itemsPurchased = itemsPurchased;
-  }
-
-
-
-  public Integer getPurchaseId() {
-    return PurchaseId;
-  }
-
-  public Integer getStoreId() {
-    return StoreId;
-  }
-
-  public Integer getCustomId() {
-    return CustomId;
-  }
-
-  public Date getDate() { return this.date; }
-
-  public JSONObject getItemsPurchased() { return this.itemsPurchased;}
-
-
-
-  public void setPurchaseId(Integer purchaseId) {
-    PurchaseId = purchaseId;
+  public void setPurchaseId(String purchaseId) {
+    this.purchaseId = purchaseId;
   }
 
   public void setStoreId(Integer storeId) {
-    StoreId = storeId;
+    this.storeId = storeId;
   }
 
   public void setCustomId(Integer customId) {
-    CustomId = customId;
+    this.customId = customId;
   }
 
   public void setDate(Date date) {
     this.date = date;
   }
 
-  public void setItemsPurchased(JSONObject itemsPurchased) { this.itemsPurchased = itemsPurchased; }
+  public void setItemsPurchased(String itemsPurchased) { this.itemsPurchased = itemsPurchased; }
 
 }

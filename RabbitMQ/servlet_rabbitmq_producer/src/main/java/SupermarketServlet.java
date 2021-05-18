@@ -37,7 +37,7 @@ public class SupermarketServlet extends HttpServlet {
       ConnectionFactory factory = new ConnectionFactory();
       factory.setUsername("test");
       factory.setPassword("test");
-      factory.setHost("18.208.186.81");
+      factory.setHost("");
       connection = factory.newConnection();
       GenericObjectPoolConfig conf = new GenericObjectPoolConfig();
       conf.setMaxTotal(800);

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="servlet_producer_rabbitmq:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8aeae098-1ff1-499d-bfb4-9a21e702cec2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../microservice_store/.idea/artifacts/microservice_store_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq_consumer_database/.idea/artifacts/rabbitmq_consumer_database_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../microservice_store/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice_store/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../microservice_store/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice_store/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../microservice_store/src/main/java/ItemCountForEachStore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../microservice_store/src/main/java/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice_store/src/main/java/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../microservice_store/target/classes/ItemCountForEachStore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../microservice_store/target/classes/PurchaseCouple.class" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice_store/target/classes/PurchaseCouple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../microservice_store/target/classes/Store$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice_store/target/classes/Store$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../microservice_store/target/classes/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice_store/target/classes/Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rabbitmq_consumer_database/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rabbitmq_consumer_database/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rabbitmq_consumer_database/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rabbitmq_consumer_database/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rabbitmq_consumer_database/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rabbitmq_consumer_database/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rabbitmq_consumer_database/src/main/java/DBCPDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rabbitmq_consumer_database/src/main/java/DBCPDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rabbitmq_consumer_database/src/main/java/Purchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rabbitmq_consumer_database/src/main/java/Purchase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rabbitmq_consumer_database/src/main/java/Recv.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rabbitmq_consumer_database/src/main/java/Recv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rabbitmq_consumer_database/target/classes/DBCPDataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/../rabbitmq_consumer_database/target/classes/DBCPDataSource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rabbitmq_consumer_database/target/classes/Purchase.class" beforeDir="false" afterPath="$PROJECT_DIR$/../rabbitmq_consumer_database/target/classes/Purchase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rabbitmq_consumer_database/target/classes/PurchaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../rabbitmq_consumer_database/target/classes/PurchaseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rabbitmq_consumer_database/target/classes/Recv$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../rabbitmq_consumer_database/target/classes/Recv$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rabbitmq_consumer_database/target/classes/Recv.class" beforeDir="false" afterPath="$PROJECT_DIR$/../rabbitmq_consumer_database/target/classes/Recv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/servlet_producer_rabbitmq_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/servlet_producer_rabbitmq_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_producer_rabbitmq_war/servlet_producer_rabbitmq_war.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/servlet_producer_rabbitmq_war/servlet_producer_rabbitmq_war.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_producer_rabbitmq_war_exploded/WEB-INF/classes/SupermarketServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/servlet_producer_rabbitmq_war_exploded/WEB-INF/classes/SupermarketServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ItemPurchased.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SupermarketServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SupermarketServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SupermarketServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SupermarketServlet.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1qv4NP7rOwtRNFS251u96OeCpeh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.21609196" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.43" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.43" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/servlet_producer_rabbitmq_war_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="servlet_producer_rabbitmq:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/servlet_producer_rabbitmq_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_servlet_producer_rabbitmq" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51164" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="servlet_producer_rabbitmq:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8aeae098-1ff1-499d-bfb4-9a21e702cec2" name="Default Changelist" comment="" />
+      <created>1617946688131</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617946688131</updated>
+      <workItem from="1617946691584" duration="311000" />
+      <workItem from="1617947050803" duration="366000" />
+      <workItem from="1617947836162" duration="1515000" />
+      <workItem from="1618014971777" duration="8000" />
+      <workItem from="1618015001151" duration="177000" />
+      <workItem from="1618018345623" duration="9477000" />
+      <workItem from="1618039196806" duration="95000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="206" y="25" width="1024" height="826" key="#Project_Structure" timestamp="1618023414051">
+      <screen x="0" y="25" width="1440" height="829" />
+    </state>
+    <state x="206" y="25" width="1024" height="826" key="#Project_Structure/0.25.1440.826@0.25.1440.826" timestamp="1617948135685" />
+    <state x="206" y="25" width="1024" height="829" key="#Project_Structure/0.25.1440.829@0.25.1440.829" timestamp="1618023414051" />
+    <state x="164" y="96" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617947123348">
+      <screen x="0" y="25" width="1440" height="828" />
+    </state>
+    <state x="164" y="96" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.828@0.25.1440.828" timestamp="1617947123348" />
+    <state x="634" y="134" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1617946725074">
+      <screen x="0" y="25" width="1440" height="829" />
+    </state>
+    <state x="634" y="134" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.25.1440.829@0.25.1440.829" timestamp="1617946725074" />
+    <state x="459" y="197" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1617948777192">
+      <screen x="0" y="25" width="1440" height="827" />
+    </state>
+    <state x="459" y="197" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.25.1440.827@0.25.1440.827" timestamp="1617948777192" />
+    <state width="930" height="421" key="GridCell.Tab.0.bottom" timestamp="1617949669103">
+      <screen x="0" y="25" width="1440" height="825" />
+    </state>
+    <state width="930" height="421" key="GridCell.Tab.0.bottom/0.25.1440.825@0.25.1440.825" timestamp="1617949669103" />
+    <state width="930" height="550" key="GridCell.Tab.0.bottom/0.25.1440.826@0.25.1440.826" timestamp="1617948068027" />
+    <state width="930" height="408" key="GridCell.Tab.0.bottom/0.25.1440.828@0.25.1440.828" timestamp="1617947334060" />
+    <state width="930" height="408" key="GridCell.Tab.0.bottom/0.25.1440.829@0.25.1440.829" timestamp="1617947421683" />
+    <state width="930" height="421" key="GridCell.Tab.0.center" timestamp="1617949669102">
+      <screen x="0" y="25" width="1440" height="825" />
+    </state>
+    <state width="930" height="421" key="GridCell.Tab.0.center/0.25.1440.825@0.25.1440.825" timestamp="1617949669102" />
+    <state width="930" height="550" key="GridCell.Tab.0.center/0.25.1440.826@0.25.1440.826" timestamp="1617948068026" />
+    <state width="930" height="408" key="GridCell.Tab.0.center/0.25.1440.828@0.25.1440.828" timestamp="1617947334059" />
+    <state width="930" height="408" key="GridCell.Tab.0.center/0.25.1440.829@0.25.1440.829" timestamp="1617947421682" />
+    <state width="930" height="421" key="GridCell.Tab.0.left" timestamp="1617949669101">
+      <screen x="0" y="25" width="1440" height="825" />
+    </state>
+    <state width="930" height="421" key="GridCell.Tab.0.left/0.25.1440.825@0.25.1440.825" timestamp="1617949669101" />
+    <state width="930" height="550" key="GridCell.Tab.0.left/0.25.1440.826@0.25.1440.826" timestamp="1617948068024" />
+    <state width="930" height="408" key="GridCell.Tab.0.left/0.25.1440.828@0.25.1440.828" timestamp="1617947334057" />
+    <state width="930" height="408" key="GridCell.Tab.0.left/0.25.1440.829@0.25.1440.829" timestamp="1617947421681" />
+    <state width="930" height="421" key="GridCell.Tab.0.right" timestamp="1617949669102">
+      <screen x="0" y="25" width="1440" height="825" />
+    </state>
+    <state width="930" height="421" key="GridCell.Tab.0.right/0.25.1440.825@0.25.1440.825" timestamp="1617949669102" />
+    <state width="930" height="550" key="GridCell.Tab.0.right/0.25.1440.826@0.25.1440.826" timestamp="1617948068027" />
+    <state width="930" height="408" key="GridCell.Tab.0.right/0.25.1440.828@0.25.1440.828" timestamp="1617947334060" />
+    <state width="930" height="408" key="GridCell.Tab.0.right/0.25.1440.829@0.25.1440.829" timestamp="1617947421682" />
+    <state width="930" height="421" key="GridCell.Tab.1.bottom" timestamp="1617949669105">
+      <screen x="0" y="25" width="1440" height="825" />
+    </state>
+    <state width="930" height="421" key="GridCell.Tab.1.bottom/0.25.1440.825@0.25.1440.825" timestamp="1617949669105" />
+    <state width="930" height="550" key="GridCell.Tab.1.bottom/0.25.1440.826@0.25.1440.826" timestamp="1617948068031" />
+    <state width="930" height="408" key="GridCell.Tab.1.bottom/0.25.1440.828@0.25.1440.828" timestamp="1617947333784" />
+    <state width="930" height="408" key="GridCell.Tab.1.bottom/0.25.1440.829@0.25.1440.829" timestamp="1617947421684" />
+    <state width="930" height="421" key="GridCell.Tab.1.center" timestamp="1617949669104">
+      <screen x="0" y="25" width="1440" height="825" />
+    </state>
+    <state width="930" height="421" key="GridCell.Tab.1.center/0.25.1440.825@0.25.1440.825" timestamp="1617949669104" />
+    <state width="930" height="550" key="GridCell.Tab.1.center/0.25.1440.826@0.25.1440.826" timestamp="1617948068029" />
+    <state width="930" height="408" key="GridCell.Tab.1.center/0.25.1440.828@0.25.1440.828" timestamp="1617947333783" />
+    <state width="930" height="408" key="GridCell.Tab.1.center/0.25.1440.829@0.25.1440.829" timestamp="1617947421683" />
+    <state width="930" height="421" key="GridCell.Tab.1.left" timestamp="1617949669103">
+      <screen x="0" y="25" width="1440" height="825" />
+    </state>
+    <state width="930" height="421" key="GridCell.Tab.1.left/0.25.1440.825@0.25.1440.825" timestamp="1617949669103" />
+    <state width="930" height="550" key="GridCell.Tab.1.left/0.25.1440.826@0.25.1440.826" timestamp="1617948068028" />
+    <state width="930" height="408" key="GridCell.Tab.1.left/0.25.1440.828@0.25.1440.828" timestamp="1617947333782" />
+    <state width="930" height="408" key="GridCell.Tab.1.left/0.25.1440.829@0.25.1440.829" timestamp="1617947421683" />
+    <state width="930" height="421" key="GridCell.Tab.1.right" timestamp="1617949669104">
+      <screen x="0" y="25" width="1440" height="825" />
+    </state>
+    <state width="930" height="421" key="GridCell.Tab.1.right/0.25.1440.825@0.25.1440.825" timestamp="1617949669104" />
+    <state width="930" height="550" key="GridCell.Tab.1.right/0.25.1440.826@0.25.1440.826" timestamp="1617948068030" />
+    <state width="930" height="408" key="GridCell.Tab.1.right/0.25.1440.828@0.25.1440.828" timestamp="1617947333783" />
+    <state width="930" height="408" key="GridCell.Tab.1.right/0.25.1440.829@0.25.1440.829" timestamp="1617947421684" />
+    <state width="930" height="421" key="GridCell.Tab.2.bottom" timestamp="1617949669107">
+      <screen x="0" y="25" width="1440" height="825" />
+    </state>
+    <state width="930" height="421" key="GridCell.Tab.2.bottom/0.25.1440.825@0.25.1440.825" timestamp="1617949669107" />
+    <state width="930" height="550" key="GridCell.Tab.2.bottom/0.25.1440.826@0.25.1440.826" timestamp="1617948068033" />
+    <state width="930" height="408" key="GridCell.Tab.2.bottom/0.25.1440.828@0.25.1440.828" timestamp="1617947333787" />
+    <state width="930" height="408" key="GridCell.Tab.2.bottom/0.25.1440.829@0.25.1440.829" timestamp="1617947421686" />
+    <state width="930" height="421" key="GridCell.Tab.2.center" timestamp="1617949669106">
+      <screen x="0" y="25" width="1440" height="825" />
+    </state>
+    <state width="930" height="421" key="GridCell.Tab.2.center/0.25.1440.825@0.25.1440.825" timestamp="1617949669106" />
+    <state width="930" height="550" key="GridCell.Tab.2.center/0.25.1440.826@0.25.1440.826" timestamp="1617948068032" />
+    <state width="930" height="408" key="GridCell.Tab.2.center/0.25.1440.828@0.25.1440.828" timestamp="1617947333785" />
+    <state width="930" height="408" key="GridCell.Tab.2.center/0.25.1440.829@0.25.1440.829" timestamp="1617947421685" />
+    <state width="930" height="421" key="GridCell.Tab.2.left" timestamp="1617949669106">
+      <screen x="0" y="25" width="1440" height="825" />
+    </state>
+    <state width="930" height="421" key="GridCell.Tab.2.left/0.25.1440.825@0.25.1440.825" timestamp="1617949669106" />
+    <state width="930" height="550" key="GridCell.Tab.2.left/0.25.1440.826@0.25.1440.826" timestamp="1617948068032" />
+    <state width="930" height="408" key="GridCell.Tab.2.left/0.25.1440.828@0.25.1440.828" timestamp="1617947333784" />
+    <state width="930" height="408" key="GridCell.Tab.2.left/0.25.1440.829@0.25.1440.829" timestamp="1617947421685" />
+    <state width="930" height="421" key="GridCell.Tab.2.right" timestamp="1617949669107">
+      <screen x="0" y="25" width="1440" height="825" />
+    </state>
+    <state width="930" height="421" key="GridCell.Tab.2.right/0.25.1440.825@0.25.1440.825" timestamp="1617949669107" />
+    <state width="930" height="550" key="GridCell.Tab.2.right/0.25.1440.826@0.25.1440.826" timestamp="1617948068033" />
+    <state width="930" height="408" key="GridCell.Tab.2.right/0.25.1440.828@0.25.1440.828" timestamp="1617947333786" />
+    <state width="930" height="408" key="GridCell.Tab.2.right/0.25.1440.829@0.25.1440.829" timestamp="1617947421685" />
+    <state x="209" y="25" width="1024" height="827" key="SettingsEditor" timestamp="1617948917472">
+      <screen x="0" y="25" width="1440" height="827" />
+    </state>
+    <state x="209" y="25" width="1024" height="826" key="SettingsEditor/0.25.1440.826@0.25.1440.826" timestamp="1617948294915" />
+    <state x="209" y="25" width="1024" height="827" key="SettingsEditor/0.25.1440.827@0.25.1440.827" timestamp="1617948917472" />
+    <state x="209" y="25" width="1024" height="828" key="SettingsEditor/0.25.1440.828@0.25.1440.828" timestamp="1617947381240" />
+  </component>
+</project>

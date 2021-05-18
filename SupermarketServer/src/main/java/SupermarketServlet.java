@@ -23,8 +23,8 @@ public class SupermarketServlet extends HttpServlet {
   @Override
   public void init(){
     AWSCredentialsProvider creds = new AWSStaticCredentialsProvider(
-        new BasicAWSCredentials("AKIAQYM3DRQQB4Y6RIPS",
-            "GfV+sKReBJOmTG1WgHsOvj5SSJX5DzQk2OKpU072")
+        new BasicAWSCredentials("",
+            "")
     );
 
     AmazonDynamoDB ddbClient = AmazonDynamoDBClientBuilder.standard()

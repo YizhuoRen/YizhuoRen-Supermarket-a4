@@ -1,0 +1,1 @@
+This a **scalable Supermarkets system** that simulate **a real supermarkets system** with as much as 1024 stores accross different zones.  The system is **scalable and distrubuted** which can have **a throughput of 20,000 purchase requests/per seconds**, this happends when 1024 stores send 300 purchase requests per hour for 9 hours to the server.

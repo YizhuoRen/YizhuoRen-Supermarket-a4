@@ -5,8 +5,8 @@ public class DBCPDataSource {
   private static BasicDataSource dataSource;
 
     private static final String user = "admin";
-    private static final String password = "RYZ123456";
-    private static final String hostName = "database-rds.ckze2rhpw4ok.us-east-1.rds.amazonaws.com";
+    private static final String password = "";
+    private static final String hostName = "database";
     private static final int port= 3306;
     private static final String schema = "SuperMarket";
     private static final String timezone = "UTC";

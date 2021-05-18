@@ -19,7 +19,7 @@ public class Recv {
     ConnectionFactory factory = new ConnectionFactory();
     factory.setUsername("test");
     factory.setPassword("test");
-    factory.setHost("18.208.186.81");
+    factory.setHost("");
     Connection connection = factory.newConnection();
 
     DeliverCallback deliverCallback = (consumerTag, delivery) -> {
